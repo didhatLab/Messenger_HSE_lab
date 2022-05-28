@@ -1,6 +1,6 @@
 # Messanger_HSE_lab
 
-Simple messanger for chating with friends in the command line;\n
+Simple messanger for chating with friends in the command line; 
 Written entierly in C using sockets;
 
 
