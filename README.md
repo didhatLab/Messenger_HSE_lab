@@ -26,3 +26,10 @@ Written entierly in C using sockets;
   * >SQLite;
   * >sockects;
   * >CMake;
+
+    
+## License
+
+HSE
+
+**Free Software, Hell Yeah!**
