@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/daniil/CLionProjects/TestClient/cmake-build-debug",
-		"source" : "/home/daniil/CLionProjects/TestClient"
+		"build" : "/home/daniil/MessangerHSE/Client/cmake-build-debug",
+		"source" : "/home/daniil/MessangerHSE/Client"
 	},
 	"version" : 
 	{

@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/daniil/CLionProjects/TestClient/cmake-build-debug/
+cmake_ninja_workdir = /home/daniil/MessangerHSE/Client/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target TestClient
 
@@ -49,77 +49,101 @@ cmake_ninja_workdir = /home/daniil/CLionProjects/TestClient/cmake-build-debug/
 
 build cmake_object_order_depends_target_TestClient: phony || CMakeFiles/TestClient.dir
 
-build CMakeFiles/TestClient.dir/main.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/main.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/main.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/main.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/main.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/structures/User/user.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/structures/User/user.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/structures/User/user.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/structures/User/user.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/structures/User/user.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/structures/User
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/structures/Connection/connection_data.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/structures/Connection/connection_data.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/structures/Connection/connection_data.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/structures/Connection/connection_data.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/structures/Connection/connection_data.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/structures/Connection
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/RequestHandler/Main/RequestHandler.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/RequestHandler/Main/RequestHandler.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/RequestHandler/Main/RequestHandler.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/RequestHandler/Main/RequestHandler.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/RequestHandler/Main/RequestHandler.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/RequestHandler/Main
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/InputForms/forms.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/InputForms/forms.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/InputForms/forms.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/InputForms/forms.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/InputForms/forms.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/InputForms
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/RequestHandler/HelpScripts/RequestMaker.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/RequestHandler/HelpScripts/RequestMaker.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/RequestHandler/HelpScripts/RequestMaker.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/RequestHandler/HelpScripts/RequestMaker.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/RequestHandler/HelpScripts/RequestMaker.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/RequestHandler/HelpScripts
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/DataBaseController/dbController.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/DataBaseController/dbController.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/DataBaseController
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/UserInterface/Commands.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/UserInterface/Commands.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/UserInterface/Commands.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/UserInterface/Commands.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/UserInterface/Commands.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/UserInterface
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/GlobalConfigs/configs.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/GlobalConfigs/configs.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/GlobalConfigs/configs.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/GlobalConfigs/configs.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/GlobalConfigs/configs.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/GlobalConfigs
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/structures/Message/message.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/structures/Message/message.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/structures/Message/message.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/structures/Message/message.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/structures/Message/message.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/structures/Message
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/StartConfiguration/starApp.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/StartConfiguration/starApp.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/StartConfiguration/starApp.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/StartConfiguration/starApp.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/StartConfiguration/starApp.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/StartConfiguration
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
-build CMakeFiles/TestClient.dir/DataBaseConfiguration/dbConfiguration.c.o: C_COMPILER__TestClient_Debug /home/daniil/CLionProjects/TestClient/DataBaseConfiguration/dbConfiguration.c || cmake_object_order_depends_target_TestClient
+build CMakeFiles/TestClient.dir/DataBaseConfiguration/dbConfiguration.c.o: C_COMPILER__TestClient_Debug /home/daniil/MessangerHSE/Client/DataBaseConfiguration/dbConfiguration.c || cmake_object_order_depends_target_TestClient
   DEP_FILE = CMakeFiles/TestClient.dir/DataBaseConfiguration/dbConfiguration.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/TestClient.dir
   OBJECT_FILE_DIR = CMakeFiles/TestClient.dir/DataBaseConfiguration
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
+  TARGET_PDB = TestClient.pdb
 
 
 # =============================================================================
@@ -135,15 +159,16 @@ build TestClient: C_EXECUTABLE_LINKER__TestClient_Debug CMakeFiles/TestClient.di
   OBJECT_DIR = CMakeFiles/TestClient.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/TestClient.dir/
   TARGET_FILE = TestClient
-  TARGET_PDB = TestClient.dbg
+  TARGET_PDB = TestClient.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/daniil/CLionProjects/TestClient/cmake-build-debug && /snap/clion/190/bin/cmake/linux/bin/ccmake -S/home/daniil/CLionProjects/TestClient -B/home/daniil/CLionProjects/TestClient/cmake-build-debug
+  COMMAND = cd /home/daniil/MessangerHSE/Client/cmake-build-debug && /snap/clion/190/bin/cmake/linux/bin/ccmake -S/home/daniil/MessangerHSE/Client -B/home/daniil/MessangerHSE/Client/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -155,7 +180,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/daniil/CLionProjects/TestClient/cmake-build-debug && /snap/clion/190/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/daniil/CLionProjects/TestClient -B/home/daniil/CLionProjects/TestClient/cmake-build-debug
+  COMMAND = cd /home/daniil/MessangerHSE/Client/cmake-build-debug && /snap/clion/190/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/daniil/MessangerHSE/Client -B/home/daniil/MessangerHSE/Client/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -171,7 +196,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/daniil/CLionProjects/TestClient/cmake-build-debug
+# Folder: /home/daniil/MessangerHSE/Client/cmake-build-debug
 
 build all: phony TestClient
 
@@ -182,14 +207,14 @@ build all: phony TestClient
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindSQLite3.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompilerABI.c /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystem.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindSQLite3.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindSQLite3.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompilerABI.c /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystem.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindSQLite3.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################

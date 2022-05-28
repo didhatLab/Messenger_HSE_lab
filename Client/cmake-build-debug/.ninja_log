@@ -1,8 +1,8 @@
 # ninja log v5
 1	82	1653458241418753354	CMakeFiles/TestClient.dir/StartConfiguration/starApp.c.o	dce20102e826d56
 437	518	1653291218982421288	CMakeFiles/TestClient.dir/structures/Connection/connection_data.c.o	550ed660e713a8b4
-91	192	1653499647847496616	TestClient	dbb4a702aba9a2a2
-1	91	1653499647747492936	CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o	34abb2bdddb55267
+128	229	1653499926226152317	TestClient	dbb4a702aba9a2a2
+1	128	1653499926126148365	CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o	34abb2bdddb55267
 1016	1113	1653291219574424183	CMakeFiles/TestClient.dir/structures/Message/message.c.o	36a69bc7de87df3e
 843	917	1653457880546982781	CMakeFiles/TestClient.dir/GlobalConfigs/configs.c.o	aa3d9a02c9bc1fbb
 45	136	1653291218598419411	CMakeFiles/TestClient.dir/structures/User/user.c.o	4cae3c0f5a1ddd3e
@@ -12,17 +12,3 @@
 793	934	1653291219386423263	CMakeFiles/TestClient.dir/RequestHandler/HelpScripts/RequestMaker.c.o	2298b6aca9cee173
 1	137	1653459812118741948	CMakeFiles/TestClient.dir/UserInterface/Commands.c.o	50cd455b2edc27c
 1	42	1653379822324924425	CMakeFiles/TestClient.dir/main.c.o	3af9b3c742ebc49c
-1	124	1653499702745535350	CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o	34abb2bdddb55267
-124	261	1653499702885540594	TestClient	dbb4a702aba9a2a2
-1	113	1653499740606961514	CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o	34abb2bdddb55267
-113	178	1653499740670963938	TestClient	dbb4a702aba9a2a2
-4	140	1653499780644486023	CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o	34abb2bdddb55267
-141	193	1653499780696488014	TestClient	dbb4a702aba9a2a2
-12	255	1653499787456746999	CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o	34abb2bdddb55267
-255	443	1653499787640754055	TestClient	dbb4a702aba9a2a2
-1	294	1653499797305125074	CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o	34abb2bdddb55267
-295	656	1653499797665138912	TestClient	dbb4a702aba9a2a2
-1	154	1653499880728362572	CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o	34abb2bdddb55267
-155	239	1653499880812365861	TestClient	dbb4a702aba9a2a2
-1	128	1653499926126148365	CMakeFiles/TestClient.dir/DataBaseController/dbController.c.o	34abb2bdddb55267
-128	229	1653499926226152317	TestClient	dbb4a702aba9a2a2
