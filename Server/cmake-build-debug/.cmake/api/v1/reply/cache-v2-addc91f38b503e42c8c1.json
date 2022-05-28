@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/daniil/CLionProjects/TestServer/cmake-build-debug"
+			"value" : "/home/daniil/MessangerHSE/Server/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -463,7 +463,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/daniil/CLionProjects/TestServer"
+			"value" : "/home/daniil/MessangerHSE/Server"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1039,7 +1039,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/daniil/CLionProjects/TestServer/cmake-build-debug"
+			"value" : "/home/daniil/MessangerHSE/Server/cmake-build-debug"
 		},
 		{
 			"name" : "TestServer_IS_TOP_LEVEL",
@@ -1063,7 +1063,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/daniil/CLionProjects/TestServer"
+			"value" : "/home/daniil/MessangerHSE/Server"
 		}
 	],
 	"kind" : "cache",

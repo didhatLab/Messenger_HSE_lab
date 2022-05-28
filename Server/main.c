@@ -28,65 +28,6 @@ void *get_in_addr(struct sockaddr *sa)
     return &(((struct sockaddr_in6*)sa)->sin6_addr);
 }
 
-char* login(const char* request, int n){
-    char login[100];
-    char password[100];
-    char* res = (char*) malloc(sizeof(char)*100);
-    int k = 0;
-    for (int i = n; request[i] != ' '; ++i){
-        login[k++] = request[i];
-        n++;
-    }
-    login[n++] = '\0';
-    k = 0;
-    for (int i = n; i < strlen(request); ++i){
-        password[k++] = request[i];
-
-    }
-    password[k] = '\0';
-    printf("%s---%s\n", login, password);
-    // SQL request to db for checking data;
-    if (strcmp(login, "didhat\0") == 0){
-        res = "OK";
-
-        return res;
-    }
-
-    res = "ERR";
-    return res;
-}
-
-char* request_handler(char* request){
-    char function_names[100][100] = {"LOGIN", "CHECK"};
-    char* (*function_pointers[3])(const char*, int)= {login};
-    int number_Functions = 2;
-    char type_request[100];
-    char *res = NULL;
-    printf("%s", request);
-    int n = 0;
-    for (int i = 0; request[i]!= ' '; ++i){
-        type_request[i] = request[i];
-        n++;
-    }
-
-    char* (*handler)(char* s, int n);
-    type_request[n++] = '\0';
-    //printf("%s\n", type_request);
-    for (int i = 0; i < number_Functions; ++i){
-        if (strcmp(type_request, function_names[i]) == 0){
-            res = function_pointers[i](request, n);
-
-            break;
-        }
-    }
-    //printf("%s", res);
-
-
-
-    return res;
-}
-
-
 int main(){
     StartConfiguration();
     fd_set master;
@@ -204,38 +145,5 @@ int main(){
     } // END for(;;)—и вы думаете, что это не закончится!
 
 }
-
-
-//    printf("server: waiting for connections...\n");
-//    while(1) { // главный цикл accept()
-//        sin_size = sizeof their_addr;
-//        new_fd = accept(sockfd, (struct sockaddr *)&their_addr, &sin_size);
-//        if (new_fd == -1) {
-//            perror("accept");
-//            continue;
-//        }
-//        inet_ntop(their_addr.ss_family,
-//                    get_in_addr((struct sockaddr *)&their_addr),
-//                    s, sizeof s);
-//        printf("server: got connection from %s\n", s);
-//        char g[1000];
-//        int num;
-//        if ((num = recv(new_fd, g, 999, 0)) == -1){
-//            perror("recv");
-//        }
-//        g[num] = '\0';
-//        char* kek;
-//        kek = request_handler(g);
-//
-//        send(new_fd, kek, strlen(kek), 0);
-//
-//        if ((num = recv(new_fd, g, 999, 0)) == -1){
-//            perror("recv");
-//        }
-//        g[num] = '\0';
-//        request_handler(g);
-//
-//        close(new_fd);
-
 
 

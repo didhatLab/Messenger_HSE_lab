@@ -1,0 +1,5 @@
+dbController - functions for work with db;
+GlobalConfigs - global variables;
+HelpScripts - rubbish from old versions;
+RequestHandler - user request handler;
+StartConfiguration - start config;
