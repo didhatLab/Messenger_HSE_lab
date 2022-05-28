@@ -4,7 +4,7 @@ Simple messanger for chating with friends in the command line;\n
 Written entierly in C using sockets;
 
 
-Commands for client:
+## Commands for client:
  /friends - show your friends list(old command from the oldest version, recommended to use /show frineds);
  /add friend - add new friend (you can add anyone, even unregistred users);
  /dell <optinally> {
@@ -21,7 +21,7 @@ Commands for client:
  /exit - close the application;
   
   
-Techologies used in the project:
+## Techologies used in the project:
   >C and some standard libraries;
   >SQLite;
   >sockects;
