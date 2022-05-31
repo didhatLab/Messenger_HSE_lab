@@ -18,3 +18,5 @@ All commands:
     /show dialog show your dialog with somebody;
     /check - check for new messages on the server;
     /exit - close the application;
+
+test push
