@@ -10,5 +10,5 @@
 #include <stdbool.h>
 
 void CommandHandler();
-bool ShowFreinds();
+bool ShowFriends();
 bool AddNewFriend();

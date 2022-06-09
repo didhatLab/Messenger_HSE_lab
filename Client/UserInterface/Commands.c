@@ -16,7 +16,7 @@
 #include "../structures/Message/message.h"
 
 
-bool ShowFreinds(){
+bool ShowFriends(){
     UserList* friends_list = get_list_friends_db();
     printf("-----------UserList List-------------\n");
     for (int i = 0; i < friends_list->quantity; ++i){
@@ -173,7 +173,7 @@ bool ShowDialogWith(){
     free(UserName);
     return true;
 }
-bool ShowDiologs(){
+bool ShowDialogs(){
     UserList * dialogs = get_list_diologs_db();
     printf("<Dialogs>\n");
     for(int i = 0; i < dialogs->quantity; ++i){
@@ -187,7 +187,7 @@ bool ShowHandler(){
     char sub_command[100];
     scanf("%s", sub_command);
     char function_names[100][100] = {"dialogs", "dialog", "friends"};
-    bool (*function_pointers[5])() = {ShowDiologs, ShowDialogWith, ShowFreinds};
+    bool (*function_pointers[5])() = {ShowDialogs, ShowDialogWith, ShowFriends};
     for (int i = 0; i < 3; ++i){
         if (strcmp(function_names[i],sub_command) == 0){
             function_pointers[i]();
@@ -208,7 +208,7 @@ void CommandHandler(){
     char* command = (char*)malloc(sizeof(char)*100);
     char functions_name[100][100] = {"/friends", "/add", "/dell", "/exit",
                                      "/send", "/show", "/check"};
-    bool (*function_pointers[7])()= {ShowFreinds, AddNewFriend, DelHandler, Exit,
+    bool (*function_pointers[7])()= {ShowFriends, AddNewFriend, DelHandler, Exit,
                                      SendNewObject, ShowHandler, CheckNewMessages};
 
 
