@@ -3,6 +3,7 @@
 //
 
 #include "dbController.h"
+#include "../HelpScripts/HelpScripts.h"
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
@@ -24,7 +25,9 @@ bool CheckCorrectUserData_db(char* usrName, char* usrPassword){
     sqlite3 * db = openDB();
     char sql[300];
     sqlite3_stmt* statement;
-    sprintf(sql, "SELECT name FROM users WHERE name = '%s' AND password = '%s'", usrName, usrPassword);
+    char* escapedUserName = DuplicateStringWithEscaping(usrName, strlen(usrName));
+    char* escapedUserPassword = DuplicateStringWithEscaping(usrPassword, strlen(usrPassword));
+    sprintf(sql, "SELECT name FROM users WHERE name = '%s' AND password = '%s'", escapedUserName, escapedUserPassword);
     int rc = sqlite3_prepare_v2(db, sql, (int) strlen(sql), &statement, NULL);
     if (rc == SQLITE_OK){
         if (sqlite3_step(statement) == SQLITE_ROW){
@@ -35,6 +38,8 @@ bool CheckCorrectUserData_db(char* usrName, char* usrPassword){
     }
     sqlite3_finalize(statement);
     sqlite3_close(db);
+    free(escapedUserName);
+    free(escapedUserPassword);
     return false;
 }
 
@@ -53,8 +58,8 @@ MessList* CheckNewMessages_db(char* usrName) {
         msgList->sender[i] = (char *) malloc(sizeof(char) * 100);
     }
 
-
-    sprintf(sql, "SELECT message, sender FROM newMessages WHERE receiver='%s'", usrName);
+    char* escapedUserName = DuplicateStringWithEscaping(usrName, strlen(usrName));
+    sprintf(sql, "SELECT message, sender FROM newMessages WHERE receiver='%s'", escapedUserName);
     int rc = sqlite3_prepare_v2(db, sql, (int) strlen(sql), &statement, NULL);
     int k = 0;
     while (sqlite3_step(statement) == SQLITE_ROW) {
@@ -97,6 +102,7 @@ MessList* CheckNewMessages_db(char* usrName) {
     msgList->count = k;
     sqlite3_finalize(statement);
     //sqlite3_close(db);
+    free(escapedUserName);
     return msgList;
 }
 
@@ -104,7 +110,8 @@ bool DeleteOldMessages_db(char* usrName){
     sqlite3 *db = openDB();
     char sql[300];
     sqlite3_stmt *statement;
-    sprintf(sql, "DELETE from newMessages WHERE receiver = '%s' ", usrName);
+    char* escapedUserName = DuplicateStringWithEscaping(usrName, strlen(usrName));
+    sprintf(sql, "DELETE from newMessages WHERE receiver = '%s' ", escapedUserName);
     int rc = sqlite3_prepare_v2(db, sql, (int) strlen(sql), &statement, NULL);
     if(rc == SQLITE_OK){
         rc = sqlite3_step(statement);
@@ -117,6 +124,7 @@ bool DeleteOldMessages_db(char* usrName){
     }
     sqlite3_close(db);
     sqlite3_finalize(statement);
+    free(escapedUserName);
     return true;
 }
 
@@ -124,9 +132,12 @@ bool SaveOldMessagesInArchive_db(MessList* msg_list, char* receiver){
     sqlite3 *db = openDB();
     char sql[3000];
     sqlite3_stmt *statement;
+    char* escapedReceiver = DuplicateStringWithEscaping(receiver, strlen(receiver));
     for (int i =0; i < msg_list->count; ++i){
+        char* escapedMessage = DuplicateStringWithEscaping(msg_list->messages[i], strlen(msg_list->messages[i]));
+        char* escapedSender = DuplicateStringWithEscaping(msg_list->sender[i], strlen(msg_list->sender[i]));
         sprintf(sql, "INSERT INTO ArchiveMessages (message, sender, receiver) VALUES('%s', '%s', '%s')",
-                msg_list->messages[i], msg_list->sender[i], receiver);
+                escapedMessage, escapedSender, escapedReceiver);
         int rc = sqlite3_prepare_v2(db, sql, (int) strlen(sql), &statement, NULL);
         if(rc == SQLITE_OK){
             rc = sqlite3_step(statement);
@@ -136,11 +147,16 @@ bool SaveOldMessagesInArchive_db(MessList* msg_list, char* receiver){
             fprintf(stderr, "Can't delete old messages");
             sqlite3_close(db);
             sqlite3_finalize(statement);
+            free(escapedMessage);
+            free(escapedReceiver);
+            free(escapedSender);
             return false;
         }
+        free(escapedMessage);
+        free(escapedSender);
     }
-
     sqlite3_close(db);
+    free(escapedReceiver);
     return true;
 }
 
@@ -148,8 +164,11 @@ bool SendNewMessage_db(char* message, char* sender, char* receiver){
     sqlite3 *db = openDB();
     char sql[300];
     sqlite3_stmt *statement;
+    char* escapedMessage = DuplicateStringWithEscaping(message, strlen(message));
+    char* escapedSender = DuplicateStringWithEscaping(sender, strlen(sender));
+    char* escapedReceiver = DuplicateStringWithEscaping(receiver, strlen(receiver));
     sprintf(sql, "INSERT INTO newMessages (message, sender, receiver) VALUES('%s', '%s', '%s')",
-            message, sender, receiver);
+            escapedMessage, escapedSender, escapedReceiver);
     int rc = sqlite3_prepare_v2(db, sql, (int)sizeof(sql), &statement, NULL);
     if (rc == SQLITE_OK){
         rc = sqlite3_step(statement);
@@ -158,9 +177,15 @@ bool SendNewMessage_db(char* message, char* sender, char* receiver){
         printf("Error with sending message...\n");
         sqlite3_finalize(statement);
         sqlite3_close(db);
+        free(escapedMessage);
+        free(escapedSender);
+        free(escapedReceiver);
         return false;
     }
     sqlite3_finalize(statement);
     sqlite3_close(db);
+    free(escapedMessage);
+    free(escapedSender);
+    free(escapedReceiver);
     return true;
 }
