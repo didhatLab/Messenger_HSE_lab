@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniil/MessangerHSE/Server
+# Install script for directory: /home/afterglow/CLionProjects/Messenger_HSE_lab/Server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/daniil/MessangerHSE/Server/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/afterglow/CLionProjects/Messenger_HSE_lab/Server/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
