@@ -10,6 +10,7 @@
 
 #include "../dbController/dbController.h"
 #include "../GlobalConfigs/GlobalCOnfigs.h"
+#include "../UUID/UuidGenerator.h"
 
 #define MAX_REQUEST_SIZE 1500
 #define MAX_REQUEST_NUMBER 300
@@ -23,17 +24,20 @@ void Login(char* request, ReqAnswer* answer){
     sscanf(request, "%s %s %s", type, usrName, usrPassword);
     bool res = CheckCorrectUserData_db(usrName, usrPassword);
     char* ans = (char*) malloc(sizeof(char)*100);
+    char* personal_code = (char*) malloc(sizeof(char)*100);
     int code;
     if (res == true){
         strcpy(ans, "CODE");
-        strcat(ans, " 34901");
+        get_unique_code(&personal_code);
+        strcat(ans, " ");
+        strcat(ans, personal_code);
     }
     else{
         strcpy(ans, "ERR");
     }
     answer->Answers[0] = ans;
     code_name_globalConfig[list_index_globalConfigs] = usrName;
-    code_list_globalConfig[list_index_globalConfigs++] = "34901";
+    code_list_globalConfig[list_index_globalConfigs++] = personal_code;
 }
 
 void Register(char* request, ReqAnswer* answer){
